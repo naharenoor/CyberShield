@@ -81,7 +81,7 @@ elif page == "Investigate":
                     with st.spinner("CrewAI agents are investigating. This can take a minute or two..."):
                         try:
                             summary = summarize_events(df)
-                            result = investigate(summary, api_key=api_key, model_name=get_secret("GROQ_MODEL", "llama-3.3-70b-versatile"))
+                            result = investigate(summary, api_key=api_key, model_name=get_secret("GROQ_MODEL", "openai/gpt-oss-120b"))
                             report = {"filename": filename, "summary": summary, **result}
                             st.session_state.reports.insert(0, report)
                             st.session_state.latest = report
