@@ -1,8 +1,0 @@
-timestamp,username,event_type,source_ip,destination,details
-2026-09-18T09:41:00Z,admin,login_failed,198.51.100.23,auth-server,Invalid password
-2026-09-18T09:41:12Z,admin,login_failed,198.51.100.23,auth-server,Invalid password
-2026-09-18T09:41:25Z,admin,login_failed,198.51.100.23,auth-server,Invalid password
-2026-09-18T09:43:02Z,admin,login_success,198.51.100.23,auth-server,Successful login after failures
-2026-09-18T09:47:19Z,admin,file_access,198.51.100.23,finance-share,Access to finance folder
-2026-09-18T09:49:01Z,admin,permission_change,198.51.100.23,admin-console,Privilege change requested
-2026-09-18T10:02:44Z,student7,login_success,203.0.113.10,portal,Normal login
