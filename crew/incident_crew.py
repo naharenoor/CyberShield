@@ -3,8 +3,7 @@ from crewai import Crew, LLM, Process, Task
 
 from agents.incident_agents import build_agents
 
-
-def investigate(event_summary: str, api_key: str, model_name: str = "llama-3.3-70b-versatile") -> dict:
+def investigate(event_summary: str, api_key: str, model_name: str = "openai/gpt-oss-120b") -> dict:
     """Run the sequential CrewAI investigation and return a Markdown report."""
     if not api_key:
         raise ValueError("A Groq API key is required.")
